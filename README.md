@@ -133,7 +133,6 @@ Companies and hiring managers searching for qualified candidates.
 | AI / NLP            | Hugging Face Transformers, spaCy, Sentence Transformers |
 | Background Tasks    | Celery, Redis |
 | Authentication      | JWT |
-| Deployment           | Vercel, Render, Supabase / Neon (Free Tier) |
 
 ---
 
