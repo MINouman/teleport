@@ -55,6 +55,7 @@ class Resume(models.Model):
     uploaded_file = models.FileField(upload_to='resumes/uploads/', blank=True, null=True)
     generated_pdf = models.FileField(upload_to='resumes/generated/', blank=True, null=True)
     is_active = models.BooleanField(default=True)
+    file = models.FileField(upload_to='resumes/', blank=True, null=True)
 
     created_at = models.DateTimeField(auto_now_add=True)
     updated_at = models.DateTimeField(auto_now=True)
