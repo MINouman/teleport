@@ -55,12 +55,13 @@ class Resume(models.Model):
     uploaded_file = models.FileField(upload_to='resumes/uploads/', blank=True, null=True)
     generated_pdf = models.FileField(upload_to='resumes/generated/', blank=True, null=True)
     is_active = models.BooleanField(default=True)
-    file = models.FileField(upload_to='resumes/', blank=True, null=True)
+    file = models.FileField(upload_to='resumes/%Y/%m/', blank=True, null=True)
 
     created_at = models.DateTimeField(auto_now_add=True)
     updated_at = models.DateTimeField(auto_now=True)
 
     class Meta:
+        db_table = 'resumes'
         ordering = ['-created_at']
 
     def __str__(self):

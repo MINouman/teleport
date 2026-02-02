@@ -5,8 +5,8 @@ from . import views
 app_name = 'resumes'
 
 router = DefaultRouter()
-router.register(r'profiles', views.CareerProfileViewSet, basename='careerprofile')
-router.register(r'resumes',  views.ResumeViewSet,         basename='resume')
+router.register(r'profiles', views.CareerProfileViewSet, basename='profile')
+router.register(r'resumes', views.ResumeViewSet, basename='resume')
 
 urlpatterns = [
     path('', include(router.urls)),
